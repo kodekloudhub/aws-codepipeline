@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Restart pm2 process manager
+pm2 restart main

@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /var/www/html
+npm install
+pm2 start /var/www/html/main.js -f

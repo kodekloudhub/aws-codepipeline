@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html
+hooks:
+  BeforeInstall:
+    - location: before_install
+      runas: root
+  AfterInstall:
+    - location: after_install
+      runas: root
+  ApplicationStart:
+    - location: application_start
+      runas: root

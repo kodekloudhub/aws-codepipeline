@@ -1,0 +1,16 @@
+{
+  "name": "jsfle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo Application should be running at port 3000, can test using mocha test.js",
+    "build": "npm build",
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^9.0.3"
+  }
+}
