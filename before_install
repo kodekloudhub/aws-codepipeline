@@ -1,8 +1,15 @@
 #!/bin/bash
 
-# Install Node.js
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-sudo apt-get install -y nodejs
+# Install Node.js and npm using the default package manager
+sudo apt-get update -y
+sudo apt-get install -y nodejs npm
 
-# Install pm2 process manager
+# Verify Node.js and npm versions
+node -v
+npm -v
+
+# Install pm2 process manager globally
 sudo npm install pm2 -g
+
+# Verify pm2 installation
+pm2 -v
